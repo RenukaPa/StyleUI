@@ -1,0 +1,22 @@
+{
+  "name": "StyleUI",
+  "version": "0.1.0",
+  "summary": "A short description of StyleUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/renukapandey90@gmail.com/StyleUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "renukapandey90@gmail.com": "renukapandey90@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/renukapandey90@gmail.com/StyleUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "StyleUI/Classes/**/*"
+}
