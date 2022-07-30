@@ -69,7 +69,7 @@ public class TriggerAlertView {
             self.alertView.frame.origin.y = 0.0
         }
         
-        timer = Timer.scheduledTimer(timeInterval: 5.0,
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
                                      selector: #selector(hideAlertView),
                                      userInfo: nil,
@@ -79,7 +79,7 @@ public class TriggerAlertView {
     @objc func hideAlertView() {
         if alertView != nil {
             UIView.animate(withDuration: self.animationTime,
-                           delay: 5.0,
+                           delay: 1.0,
                            options: [.allowUserInteraction],
                            animations: {
                             self.alertView.frame.origin.y = self.defaultYPos
