@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+struct MessageStyle {
+    var type: AlertView.AlertType!
+    var msg: String!
+}
+
 public class TriggerAlertView {
     public init() {}
     var alertView: AlertView!
@@ -19,11 +24,13 @@ public class TriggerAlertView {
     
     public func setAlert(message: String? = "",
                          type: AlertView.AlertType,
-                     fromBottom: (() -> Void)?) {
+                     fromBottom: (() -> Void)? = nil) {
         self.openAlertInBottom = fromBottom
+        let msgStyle = MessageStyle(type: type, msg: message)
+        self.showAlertView(msg: msgStyle)
     }
     
-    public func showAlertView(msg: String) {
+    func showAlertView(msg: MessageStyle) {
         if self.alertView == nil {
             let rect = CGRect(x: 0,
                               y: defaultYPos,
@@ -44,10 +51,11 @@ public class TriggerAlertView {
                            })
         }
         
-        alertView.textContent = msg
+        alertView.textContent = msg.msg
+        alertView.type = msg.type
         if let window = UIApplication.shared.keyWindow {
             window.addSubview(alertView)
-            window.bringSubviewToFront(alertView)
+            window.bringSubview(toFront: alertView)
         }
         self.startAnimation()
     }

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="Pods_StyleUI_Example" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="StyleUI" customModuleProvider="target">
             <connections>
-                <outlet property="bgView" destination="zP7-2j-7tW" id="BAF-Sm-zkh"/>
-                <outlet property="lbl" destination="b1g-Qx-RIl" id="HIu-Zg-o5K"/>
+                <outlet property="bgView" destination="zP7-2j-7tW" id="x7B-zg-BPb"/>
+                <outlet property="lbl" destination="b1g-Qx-RIl" id="OBU-S1-1gU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,17 +22,16 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zP7-2j-7tW">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1g-Qx-RIl">
-                            <rect key="frame" x="10" y="10" width="394" height="80"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1g-Qx-RIl">
+                            <rect key="frame" x="10" y="30" width="394" height="60"/>
+                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     <constraints>
-                        <constraint firstItem="b1g-Qx-RIl" firstAttribute="centerY" secondItem="zP7-2j-7tW" secondAttribute="centerY" id="3sc-T6-5BY"/>
-                        <constraint firstItem="b1g-Qx-RIl" firstAttribute="top" secondItem="zP7-2j-7tW" secondAttribute="top" constant="10" id="EpZ-3g-XYI"/>
+                        <constraint firstItem="b1g-Qx-RIl" firstAttribute="top" secondItem="zP7-2j-7tW" secondAttribute="top" constant="30" id="EpZ-3g-XYI"/>
                         <constraint firstItem="b1g-Qx-RIl" firstAttribute="leading" secondItem="zP7-2j-7tW" secondAttribute="leading" constant="10" id="PpO-af-Eqf"/>
                         <constraint firstAttribute="trailing" secondItem="b1g-Qx-RIl" secondAttribute="trailing" constant="10" id="SxA-rt-tXX"/>
                         <constraint firstAttribute="bottom" secondItem="b1g-Qx-RIl" secondAttribute="bottom" constant="10" id="yQu-nw-2FI"/>
@@ -53,6 +52,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -59,9 +59,9 @@ public class AlertView: UIView {
     }
     
     private func initializeContent() {
-        self.bgView.backgroundColor = UIColor.clear
         _ = fromNib(nibName: String(describing: AlertView.self), isInherited: true)
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipe(gesture:)))
+        self.bgView.backgroundColor = UIColor.clear
         upSwipe.direction = .up
         upSwipe.delegate = self
         bgView.isUserInteractionEnabled = true

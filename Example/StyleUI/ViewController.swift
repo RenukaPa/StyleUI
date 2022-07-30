@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StyleUI
 
 class ViewController: UIViewController {
 
@@ -21,7 +22,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func checkAlertView(_ sender: Any) {
-        
+        let alert = TriggerAlertView()
+        alert.setAlert(message: "Testing", type: .warn)
     }
 }
 
