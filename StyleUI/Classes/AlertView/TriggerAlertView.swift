@@ -55,7 +55,7 @@ public class TriggerAlertView {
         alertView.type = msg.type
         if let window = UIApplication.shared.keyWindow {
             window.addSubview(alertView)
-            window.bringSubview(toFront: alertView)
+            window.bringSubviewToFront(alertView)
         }
         self.startAnimation()
     }
