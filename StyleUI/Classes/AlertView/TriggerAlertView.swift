@@ -23,7 +23,7 @@ public class TriggerAlertView {
         self.openAlertInBottom = fromBottom
     }
     
-    func showAlertView(msg: String) {
+    public func showAlertView(msg: String) {
         if self.alertView == nil {
             let rect = CGRect(x: 0,
                               y: defaultYPos,
