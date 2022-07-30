@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func checkAlertView(_ sender: Any) {
         let alert = TriggerAlertView()
-        alert.setAlert(message: "Testing", type: .warn)
+        alert.setAlert(message: "Testing zdv sdfsd sdfsdf sfsdf werwer werwer werwer sefe fwerwer werwer sdfsdf werwer werwer sdfsd esfd ewrwer werwer werwer sdfsdf sdfsdf sdfdsf wefds", type: .warn)
     }
 }
 

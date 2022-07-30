@@ -16,7 +16,7 @@ struct MessageStyle {
 public class TriggerAlertView {
     public init() {}
     var alertView: AlertView!
-    let alertHeight: CGFloat = 100.0
+    let alertHeight: CGFloat = 120.0
     var defaultYPos: CGFloat = -100.0
     var animationTime: TimeInterval = 0.5
     var timer: Timer?
