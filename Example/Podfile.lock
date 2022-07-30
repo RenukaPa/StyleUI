@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - StyleUI (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - StyleUI (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   StyleUI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   StyleUI: 3d28cb42705f4654fb7b30388e634456736205bf
 
-PODFILE CHECKSUM: 49d4723cea27f51301a87cf71b52323037aa6667
+PODFILE CHECKSUM: ae64774922c73ca1554f372ac37208708e48316c
 
 COCOAPODS: 1.11.3
