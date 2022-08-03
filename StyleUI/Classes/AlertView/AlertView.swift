@@ -26,9 +26,9 @@ public class AlertView: UIView {
             var bgColor: UIColor!
             switch type {
             case .success:
-                bgColor = .green
+                bgColor = UIColor(red: 0, green: 169, blue: 54, alpha: 1)
             case .fail:
-                bgColor = .red
+                bgColor = UIColor(red: 150, green: 0, blue: 0, alpha: 1)
             case .warn:
                 bgColor = .orange
             case .notify:
