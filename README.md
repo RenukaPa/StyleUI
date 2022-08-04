@@ -22,7 +22,7 @@ pod 'StyleUI'
 
 ## Author
 
-renukapandey90@gmail.com, renukapandey90@gmail.com
+Renuka Pandey
 
 ## License
 
